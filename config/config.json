@@ -1,0 +1,9 @@
+{
+  "secret" : "=25_ar;p1100",
+  "github" : {
+    "searchUri" : "https://api.github.com/search/users?q=language:__language__&is:public&per_page=20"
+  },
+  "mongo": {
+    "URI": "mongodb://localhost/githubex"
+  }
+}

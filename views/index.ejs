@@ -1,0 +1,30 @@
+<% include ./partials/header.ejs %>
+
+<div class="container">
+    <% if(error && error.length > 0){ %>
+  <div class="alert alert-danger" role="alert">
+      <%= error %>
+  </div>
+    <% } %>
+    <% if(success && success.length > 0){ %>
+  <div class="alert alert-success" role="alert">
+      <%= success %>
+  </div>
+    <% } %>
+
+    <div id="landing-header">
+        <h1>Welcome to Github Search Tool</h1>
+    </div>
+
+    <form action="/" method="post">
+        <div class="form-group">
+            <label for="find">Language</label>
+            <input type="text" class="form-control" id="criteria" name="language" placeholder="Programing Language" required>
+        </div>
+        <button type="submit" class="btn btn-default btn-primary">Search</button>
+
+    </form>
+
+</div>
+
+<% include ./partials/footer.ejs %>
